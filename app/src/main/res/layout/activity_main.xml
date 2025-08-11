@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="شماره مقصد (Forward to):"/>
+    <EditText android:id="@+id/editTarget" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone"/>
+
+    <Button android:id="@+id/btnSaveTarget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ذخیره شماره مقصد"/>
+
+    <View android:layout_width="match_parent" android:layout_height="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اضافه کردن شماره مجاز:"/>
+    <EditText android:id="@+id/editAllowed" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone"/>
+    <Button android:id="@+id/btnAddAllowed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="افزودن"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="لیست شماره‌های مجاز (لمس طولانی برای حذف):" android:paddingTop="8dp"/>
+    <ListView android:id="@+id/listAllowed" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>
